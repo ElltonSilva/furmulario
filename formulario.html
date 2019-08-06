@@ -3,18 +3,93 @@
 
 	<head>
 		<title>Formulario</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
 
 	<body>
 
-		<form action="" method="Post">
-			<p>Usuario:
-				<input type="text" name="Usuario" maxlength="30">
-			</p>
+		<h1>Faça seu cadastro</h1>
 
-			<p>Senha:
-				<input type="text" name="Senha" maxlength="8">
-			</p>
+		<form action="" method="Post">
+		  <fieldset>
+		  		<legend>Detalhes Pessoais</legend>
+				<label for="Nome">Nome:
+					<input type="text" name="Nome" maxlength="30" id="Nome" required="required" size="30">
+				</label>
+
+				<label>Sobrenome:
+					<input type="text" name="Sobrenome" maxlength="100" required="required" size="40">
+				</label>
+
+				<label>Sexo:
+					<select>
+						<option value="masculino">Masculino</option>
+						<option value="femenino">Feminino</option>
+					</select>
+				</label><br><br>
+	
+				<label>Matrícula:
+					<input type="text" name="Matrícula" maxlength="10" required="required">
+				</label>
+
+				<label>CPF:
+					<input type="text" name="cpf" maxlength="11" required="required">
+				</label>
+
+				<label>Data de Nascimento:
+					<input type="date" name="depart" required="required">
+				</label><br><br>
+
+				<label for="Celular">Celular:
+					<input type="Tel" name="cel" id="Celular" maxlength="20" required="required" pattern="[0-9]+$">
+				</label>
+
+				<label for="telefone">Tel. Residencial:
+					<input type="Tel" name="resid" id="telefone" maxlength="20" required="required" pattern="([0-9]{2})[s][0-9]{4}-[0-9]{4}" >
+				</label><br><br>
+
+				<label>Enderenço:
+					<input type="text" name="end" size="60">
+				</label>
+
+				<label>Bairro:
+					<input type="text" name="Bairro" size="30">
+				</label><br><br>
+
+				<label>Cidade:
+					<input type="text" name="Cidade" size="40">
+				</label>
+
+				<label for="CEP">CEP:
+					<input type="" name="CEP" id="CEP" required pattern="\d{5}-?\d{3}">
+				</label>
+				<input type="submit" value="OK"><br><br>
+
+				<label>Email:
+				    <input type="Email" name="Email" required="required" size="60" >
+				</label>
+				
+		   </fieldset>	
+		
+		   <fieldset class="gestao">
+		   		<legend>Usuário Gestão</legend>
+		   		<label>Usuário:
+		   			<input type="number" name="number" required="required">
+		   		</label>
+		   		<input type="text" name="Nome" id="Nome" size="50"><br><br>
+
+		   		<label>Senha:
+		   			<input type="password" name="senha" required="required">
+		   		</label>
+
+		   		<label>Conf. Senha:
+		   			<input type="password" name="senha" required="">
+		   		</label>
+
+		   		<button>Salvar</button>
+
+		   		<input type="checkbox" name="service" value="excluir"> Inativar usuário ao excluir funcionário
+		   </fieldset>
 		</form>		
 
 	</body>
