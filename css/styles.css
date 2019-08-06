@@ -1,0 +1,48 @@
+body{
+	background-color:rgb(140,202,242);
+}
+
+h1{
+	width: 300px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+form{
+	width:900px;
+	margin:0 auto;
+	padding-top:50px;
+
+}
+fieldset.gestao{
+	width:;
+	margin-top: 30px;
+   padding-top: 20px;
+
+}
+
+fieldset{
+	 border-style:ridge;
+	 border-width: 2px;
+	 border-color: green;
+	 border-radius: 10px;
+	 padding-top: 20px;
+
+}
+
+legend{
+	width:160px;
+	border-style:ridge;
+	 border: 2px;
+	 border-color: green;
+	 border-radius: 10px;
+	 padding: 10px 20px;
+	text-align: left;
+	text-transform: uppercase;
+	background-color: #66cdae;
+}
+
+input{
+border:none;
+height: 20px
+}
