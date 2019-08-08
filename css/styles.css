@@ -44,5 +44,11 @@ legend{
 
 input{
 border:none;
-height: 20px
+height: 25px;
+}
+
+p{
+	width:100px;
+	margin: 10px auto; 
+
 }
